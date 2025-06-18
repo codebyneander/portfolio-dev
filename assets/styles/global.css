@@ -1,0 +1,47 @@
+/* Este bloco de código redefine as propriedades de margem e preenchimento de todos os elementos para 0, e define o modelo de caixa para border-box, o que significa que o preenchimento e a borda serão incluídos nas dimensões totais do elemento. Isso ajuda a criar um layout mais previsível e consistente. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+:root {
+  /* Definição de variáveis de cor */
+  --color-red: #E3646E;
+  --color-purple: #BB72E9;
+  --color-blue: #3996DB;
+  --color-green: #82BC4F;
+  --color-yellow: #EABD5F;
+
+  --gray-100: #E2E4E9;
+  --gray-200: #C0C4CE;
+  --gray-300: #878EA1;
+  --gray-400: #292C34;
+  --gray-500: #16181D;
+  --gray-600: #0D0E11;
+
+  /* Definição de variáveis de fonte */
+  --font-family-asap: "Asap", sans-serif;
+  --font-family-inconsolata: "Inconsolata", monospace;
+
+  /* Comentado pois Maven Pro não está sendo utilizado no momento */
+  --font-family-maven: "Maven Pro", sans-serif;
+
+  /* Definição de variáveis de tamanho de fonte */
+
+  /* Asap */
+  --asap-title-lg: bold 56px/120% var(--font-family-asap);
+  --asap-title-md: bold 24px/120% var(--font-family-asap);
+  --asap-title-sm: bold 16px/120% var(--font-family-asap);
+
+  /* Inconsolata */
+  --text-incosolata: normal 20px/120% var(--font-family-inconsolata);
+
+  /* Maven Pro */
+  --mavenpro-text-md: 16px/140% var(--font-family-maven);
+  --mavenpro-text-sm: 14px/140% var(--font-family-maven);
+}
+
+body {
+  height: 100vh;
+}

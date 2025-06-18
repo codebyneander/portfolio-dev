@@ -1,0 +1,67 @@
+@import url(global.css);
+
+header {
+  background-image: url(../images/Background_Intro.png); /* Define a imagem de fundo do cabeçalho */
+  background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */
+  background-size: cover; /* Faz com que a imagem de fundo cubra todo o cabeçalho */
+  background-position: center; /* Centraliza a imagem de fundo */
+  width: 100%; /* Define a largura do cabeçalho para 100% da largura da tela */
+  height: 750px; /* Define a altura do cabeçalho para 750 pixels */
+  display: flex; /* Utiliza flexbox para o layout do cabeçalho */
+  flex-direction: column; /* Organiza os elementos do cabeçalho em uma coluna */
+  align-items: center; /* Alinha os itens do cabeçalho no centro horizontalmente */
+  justify-content: center; /* Alinha os itens do cabeçalho no centro verticalmente */
+  color: var(--gray-200); /* Define a cor do texto no cabeçalho como cinza claro */
+}
+
+header nav { 
+  display: flex; /* Utiliza flexbox para o layout da barra de navegação */
+  flex-direction: column; /* Organiza os itens da barra de navegação em uma coluna */
+
+  div:nth-child(1) {
+    display: flex; /* Utiliza flexbox para o layout do primeiro item da barra de navegação */
+    flex-direction: column; /* Organiza os itens do primeiro item em uma coluna */
+    align-items: center; /* Alinha os itens do primeiro item no centro horizontalmente */
+    justify-content: center; /* Alinha os itens do primeiro item no centro verticalmente */
+    gap: 56px; /* Define um espaço de 56 pixels entre os itens do primeiro item */
+
+    img {
+      width: 112px; /* Define a largura da imagem do logotipo */
+      height: 112px; /* Define a altura da imagem do logotipo */
+    }
+
+    span {
+      font: var(--text-incosolata); /* Define a fonte do texto como Inconsolata */
+
+      strong {
+        color: var(--color-red); /* Define a cor do texto em negrito como vermelho */
+        font-weight: 400; /* Define o peso da fonte do texto em negrito como 400 */
+      }
+    }
+
+    h1 {
+      font: var(--asap-title-lg); /* Define a fonte do título principal como Asap */
+    }
+
+    p {
+      font: var(--mavenpro-text-sm); /* Define a fonte do parágrafo como Maven Pro */
+    }
+  }
+}
+
+.texts {
+  align-items: center; /* Alinha os itens de texto no centro horizontalmente */
+  display: flex; /* Utiliza flexbox para o layout dos itens de texto */
+  justify-content: center; /* Alinha os itens de texto no centro verticalmente */
+  flex-direction: column; /* Organiza os itens de texto em uma coluna */
+  max-width: 680px; /* Define a largura máxima dos itens de texto como 680 pixels */
+
+  h1 {
+    margin-top: 8px; /* Define uma margem superior de 8 pixels para o título */
+  }
+
+  p {
+    margin-top: 20px; /* Define uma margem superior de 20 pixels para o parágrafo */
+    color: var(--gray-300); /* Define a cor do parágrafo como cinza médio */
+  }
+}
