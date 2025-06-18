@@ -1,4 +1,70 @@
 main {
-  height: 701;
-  background-color: var(--gray-400);
+  display: flex;
+  justify-content: center; /* Alinha o conteúdo principal no centro horizontalmente */
+  align-items: center; /* Alinha o conteúdo principal no centro verticalmente */
+  flex-direction: column; /* Organiza os itens do conteúdo principal em uma coluna */
+  gap: 56px; /* Define um espaço de 56 pixels entre os itens do conteúdo principal */
+  background-color: var(--gray-500);
+
+  div {
+
+      display: flex; /* Utiliza flexbox para o layout do conteúdo principal */
+      flex-direction: column; /* Organiza os itens do conteúdo principal em uma coluna */
+      align-items: center; /* Alinha os itens do conteúdo principal no centro horizontalmente */
+      justify-content: center; /* Alinha os itens do conteúdo principal no centro verticalmente */
+      gap: 8px; /* Define um espaço de 8 pixels entre os itens do conteúdo principal */
+
+      span {
+        color: var(--color-red); /* Define a cor do texto como vermelho */
+        font: var(--text-incosolata); /* Define a fonte do texto como Inconsolata */
+      }
+
+      h2 {
+        color: var(--gray-100); /* Define a cor do título como cinza claro */
+        font: var(--asap-title-md); /* Define a fonte do título como Asap */
+      }
+  }
+
+  section {
+    display: grid; /* Utiliza grid para o layout da seção */
+    place-items: center; /* Alinha os itens da seção no centro */
+    grid-template-columns: repeat(3, 1fr); /* Cria três colunas de tamanho igual */
+    gap: 24px; /* Define um espaço de 24 pixels entre os cards */
+
+    padding-bottom: 72px; /* Define um preenchimento de 72 pixels na parte inferior do conteúdo principal */
+
+    article {
+      width: 330px; /* Define a largura do card como 330 pixels */
+      height: 280px; /* Define a altura do card como 280 pixels */
+      background-color: var(--gray-400); /* Um fundo escuro para destacar o card */
+      border-radius: 12px; /* Arredonda os cantos do card */
+      overflow: hidden; /* Garante que a imagem não vaze das bordas arredondadas */
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+      color: var(--gray-100); /* Define a cor do texto dentro do card como cinza claro */
+
+      /* Padding solicitado */
+      padding-block: 12px;
+      padding-inline: 12px;
+
+      img {
+        width: 100%; /* Faz a imagem ocupar toda a largura do card */
+        height: auto;
+        display: block;
+        border-radius: 8px; /* Bordas arredondadas para a imagem */
+      }
+
+      h2 {
+        font: var(--asap-title-sm); /* Define a fonte do título do card como Asap */
+        margin-bottom: 8px; /* Espaço entre o título e o parágrafo do card */
+        margin-top: 20px;
+      }
+
+      p {
+        font: var(--mavenpro-text-sm); /* Define a fonte do parágrafo do card como Maven Pro */
+        color: var(--gray-200); /* Define a cor do parágrafo do card como cinza médio */
+        max-width: 298px;
+        
+      }
+    }
+  }
 }

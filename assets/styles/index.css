@@ -1,2 +1,3 @@
 @import url(global.css); /* Importa o arquivo global.css, que contém estilos que podem ser utilizados em todo o projeto */
 @import url(header.css); /* Importa o arquivo header.css, que contém estilos específicos para o cabeçalho do projeto */
+@import url(main.css); /* Importa o arquivo main.css, que contém estilos para o layout principal do projeto */

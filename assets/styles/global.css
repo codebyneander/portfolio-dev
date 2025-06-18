@@ -45,3 +45,7 @@
 body {
   height: 100vh;
 }
+
+.container {
+  padding-inline: 120px; /* Define um preenchimento de 120 pixels nas laterais do container */
+}
