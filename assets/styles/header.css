@@ -65,3 +65,24 @@ header nav {
     color: var(--gray-300); /* Define a cor do parágrafo como cinza médio */
   }
 }
+
+#stacks {
+  display: flex; /* Utiliza flexbox para o layout dos stacks */
+  flex-direction: row; /* Organiza os stacks em uma linha */
+  justify-content: space-between; /* Distribui os stacks com espaço entre eles */
+  gap: 16px; /* Define um espaço de 16 pixels entre os stacks */
+  margin-top: 80px; /* Define uma margem superior de 80 pixels para os stacks */
+
+  a {
+    padding: 8px 16px; /* Define um preenchimento de 8 pixels na parte superior e inferior, e 16 pixels nas laterais */
+    background-color: var(--gray-400); /* Define a cor de fundo dos links como cinza escuro */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font: var(--mavenpro-text-md); /* Define a fonte dos links como Maven Pro */
+    color: var(--gray-200); /* Define a cor dos links como cinza claro */
+    align-items: center; /* Alinha os itens dos links no centro horizontalmente */
+    justify-content: center; /* Alinha os itens dos links no centro verticalmente */
+    display: flex; /* Utiliza flexbox para o layout dos links */
+    border-radius: 999px; /* Define um raio de borda de 999 pixels para os links */
+    gap: 8px; /* Define um espaço de 8 pixels entre os ícones e o texto dos links */
+  }
+}
