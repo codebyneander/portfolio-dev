@@ -86,3 +86,7 @@ header nav {
     gap: 8px; /* Define um espaço de 8 pixels entre os ícones e o texto dos links */
   }
 }
+
+#seta {
+  margin-top: 94px;
+}
