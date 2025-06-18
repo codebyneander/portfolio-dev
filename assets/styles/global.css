@@ -49,3 +49,37 @@ body {
 .container {
   padding-inline: 120px; /* Define um preenchimento de 120 pixels nas laterais do container */
 }
+
+.bg-color-600 {
+  background-color: var(--gray-600); /* Define a cor de fundo do container como cinza escuro */
+  width: 100vw;
+  padding-block: 88px; /* Define um preenchimento de 88 pixels na parte superior, 120 pixels nas laterais e 120 pixels na parte inferior do container */
+  display: flex; /* Utiliza flexbox para o layout do container */
+  justify-content: center; /* Alinha os itens do container no centro horizontalmente */
+  align-items: center; /* Alinha os itens do container no centro verticalmente */
+   gap: 56px; /* Define um espaço de 8 pixels entre os itens do conteúdo principal */
+}
+
+.gap-48 {
+  margin-top: 48px; /* Define uma margem superior de 48 pixels para o conteúdo principal */
+}
+
+a:hover {
+  border: 1px solid var(--color-blue); /* Define uma borda de 2 pixels ao redor da figura com a cor azul */
+  color: var(--color-blue); /* Muda a cor do texto para azul ao passar o mouse */
+  transition: all 0.03s ease; /* Adiciona uma transição suave de 0.03 segundos para todas as propriedades ao passar o mouse sobre o link */
+  text-decoration: none; /* Remove o sublinhado do link ao passar o mouse */
+  cursor: pointer; /* Muda o cursor para uma mão ao passar o mouse sobre o link */
+  outline: none; /* Remove o contorno do link ao passar o mouse */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao link ao passar o mouse */
+  transform: scale(1.05); /* Aumenta ligeiramente o tamanho do link ao passar o mouse */
+  text-shadow: 0 0 4px var(--color-blue); /* Adiciona um efeito de sombra ao texto do link ao passar o mouse */
+  filter: brightness(1.1); /* Aumenta o brilho do link ao passar o mouse */
+  background-color: var(--gray-500); /* Muda a cor de fundo do link ao passar o mouse */
+  border-radius: 8px; /* Arredonda os cantos do link ao passar o mouse */
+  padding: 8px 16px; /* Adiciona um preenchimento de 8 pixels na parte superior e inferior, e 16 pixels nas laterais ao passar o mouse */
+  display: flex; /* Utiliza flexbox para o layout do link ao passar o mouse */
+  align-items: center; /* Alinha os itens do link no centro horizontalmente ao passar o mouse */
+  justify-content: center; /* Alinha os itens do link no centro verticalmente ao passar o mouse */
+  gap: 8px; /* Define um espaço de 8 pixels entre os ícones e o texto do link ao passar o mouse */
+}
